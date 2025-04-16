@@ -10,4 +10,5 @@ $routes->get('/', 'Home::index');
 /// Home => Controller
 /// ::restaurants => hàm trong controller
 //nhánh main -> sửa nhánh main
+///asdasdsad
 $routes->get('/res', 'Home::restaurants');
