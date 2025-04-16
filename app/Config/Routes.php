@@ -9,5 +9,5 @@ $routes->get('/', 'Home::index');
 //   /restaurants => tên đường dẫn tự đặt
 /// Home => Controller
 /// ::restaurants => hàm trong controller
-//nhánh main
+//nhánh main -> sửa nhánh main
 $routes->get('/res', 'Home::restaurants');
