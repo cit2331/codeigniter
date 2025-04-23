@@ -29,12 +29,11 @@
 	<div class="form">
 		<div class="thumbnail"><img src="images/manager.png" /></div>
 		<div class="form-dangky">
-			<form class="register-form" action="index.php" method="post">
-				<input type="text" placeholder="username" name="cr_user" />
-				<input type="text" placeholder="email address" name="cr_email" />
-				<input type="password" placeholder="password" name="cr_pass" />
-				<input type="password" placeholder="Confirm password" name="cr_cpass" />
-				<input type="password" placeholder="Unique-Code" name="code" />
+			<form class="register-form" action="create" method="post">
+				<input type="text" placeholder="username" name="username" />
+				<input type="text" placeholder="email address" name="email" />
+				<input type="password" placeholder="password" name="password" />
+				<input type="password" placeholder="Confirm password" name="repassword" />
 				<input type="submit" name="submit1" value="Đăng ký" />			
 			</form>
 			<p class="message">Đã có tài khoản <button onclick="sign_in()">Đăng nhập</button></p>
@@ -58,8 +57,8 @@
 	<script>
 
 		function create_account(){
-			$('.form-dangky').show();
-			$('.form-dangnhap').hide();
+			$('.form-dangky').show();//hiển thị
+			$('.form-dangnhap').hide();//ẩn đi
 		}
 
 		function sign_in(){
