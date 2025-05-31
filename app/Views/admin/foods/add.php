@@ -64,14 +64,14 @@
                                             <div class="form-group">
                                                 <label class="control-label">Tên
                                                     món</label>
-                                                <input type="text" name="title" class="form-control">
+                                                <input type="text" name="title" value="<?=old('title')?>" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group has-danger">
                                                 <label class="control-label">Mô
                                                     tả</label>
-                                                <input type="text" name="slogan" class="form-control form-control-danger">
+                                                <input type="text" name="slogan" value="<?=old('slogan')?>" class="form-control form-control-danger">
                                             </div>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@
                                             <div class="form-group">
                                                 <label class="control-label">Giá
                                                     tiền </label>
-                                                <input type="text" name="price" class="form-control" placeholder="$">
+                                                <input type="text" name="price" value="<?=old('price')?>" class="form-control" placeholder="$">
                                             </div>
                                         </div>
 

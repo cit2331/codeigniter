@@ -13,8 +13,7 @@ class Foods extends BaseController
     public function index(): string
     {
         $data = [];
-        $data['dishes'] = $this->service->getDataPaginateDishes();
-        $data['pager'] = $this->service->getPagerDishes();
+        $data['dishes'] = $this->service->getAllDishes();
         $data = $this -> giaodienAdmin($data);
         return view('admin/foods/allmenu', $data);
     }
@@ -31,6 +30,7 @@ class Foods extends BaseController
         return redirect()->back()->withInput()->with($result['messageCode'],$result['messages']);
     }
     public function edit($id){
+    public function edit($id, $t){
         $data = [];
         $data['food'] = $this->service->getDishesByID($id);
         $data = $this -> giaodienAdmin($data);
