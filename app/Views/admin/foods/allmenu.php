@@ -62,10 +62,6 @@
                                             <?php endforeach ?>
                                         </tbody>
                                     </table>
-                                    
-                                    <!-- <div class="rows">
-                                        <?= $pager -> links('default', 'custom_pagination')?>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>

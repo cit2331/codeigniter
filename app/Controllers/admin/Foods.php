@@ -30,7 +30,6 @@ class Foods extends BaseController
         return redirect()->back()->withInput()->with($result['messageCode'],$result['messages']);
     }
     public function edit($id){
-    public function edit($id, $t){
         $data = [];
         $data['food'] = $this->service->getDishesByID($id);
         $data = $this -> giaodienAdmin($data);
